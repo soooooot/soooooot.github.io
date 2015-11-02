@@ -37,7 +37,7 @@ I kept struggling to seek for the iTerm2 issue solution or to get back to use Te
 
 add the follow to `.zshrc` files.
 
-{% highlight shell %}
+{% highlight sh %}
 bindkey -M viins '^r' history-incremental-search-backward
 bindkey -M vicmd '^r' history-incremental-search-backward
 {% endhighlight %}
