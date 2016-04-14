@@ -42,8 +42,12 @@ systemProp.https.proxyPort=8118
 方法简要：就是把目标文件下好，放在`brew --cache`的目录上，但我没有操作成功，权限设置都和其它缓存文件一样。
 
 ### packager.sh 'node' command not found
+
+
 因为是我使用了nvm，所以在未启用nvm的情况下，并不能找到node命令。
 在此处参考了下github上面的issue，在`react-native`的脚本文件里hack了一下。
+
+**2016-04-14 更正： nvm下请执行`nvm alias default node`命令才是科学的解决该问题**
 
 在`node_modules/react-native/packager/packager.sh`, 并在前面加上如下内容 
 {% highlight sh%}
@@ -52,6 +56,10 @@ source $(brew --prefix nvm)/nvm.sh
 nvm use stable
 {% endhighlight %}
 此处根据你的nvm的安装情况进行修改。
+
+
+----------
+这里有一篇[后续]({% post_url 2016-04-14-react-native-android-release %}), 关于使用NDK编译ReactAndroid的一些问题。
 
 
 [privoxy -- socks5 to http]: http://yanghui.name/blog/2015/07/19/make-all-command-through-proxy/
