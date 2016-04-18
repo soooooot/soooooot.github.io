@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "前端单元测试中的名词及库简单解释"
-date:   2016-04-19 00:55
+date:   2016-04-19 00:55 +0800
 categories: test javascript unittest
 ---
 
@@ -38,10 +38,6 @@ expect(tea).to.have.property('flavors').with.length(3);
 * [expect.js] - star 1.3k
 * Node.js 核心库 Assert 
 
-
-[Chai]: http://chaijs.com/
-[should.js]: https://shouldjs.github.io/
-[expect.js]: https://github.com/Automattic/expect.js
 
 ### Test Framework 测试框架
 
@@ -98,15 +94,6 @@ describe("The 'toBe' matcher compares with ===", function() {
 
 * [Sinnon.JS] - Standalone test spies, stubs and mocks for JavaScript.
 
-[Sinnon.Js]: http://sinonjs.org/
-
-[Jasmine]: https://jasmine.github.io
-[Tape]: https://github.com/substack/tape
-[Cucumber]: https://cucumber.io/
-[TAP]: http://www.node-tap.org/
-[AVA]: https://github.com/sindresorhus/ava
-[protractor]: http://www.protractortest.org/
-[jstest]: http://jstest.jcoglan.com
 
 ### test runner
 有了测试代码后，你总得需要把测试代码跑进来，然后你得管理测试结果，你需要测试报告(reporter), 你可以还需要和`CI`持续集成系统进行结合, 有些需要打开浏览器测试的你还要想办法在浏览器中运行测试代码。
@@ -135,12 +122,6 @@ describe("The 'toBe' matcher compares with ===", function() {
 * [Test'em] - 2.3k Test'em 'Scripts! A test runner that makes Javascript unit testing fun.
 
 
-[Karma]: https://karma-runner.github.io
-[Selemium]: www.seleniumhq.org
-[Mocha]: https://mochajs.org/
-[JsTestDriver]: https://code.google.com/archive/p/js-test-driver/
-[Teaspoon]: https://github.com/modeset/teaspoon
-[Test'em]: https://github.com/testem/testem
 
 
 ### headless browser
@@ -156,10 +137,6 @@ describe("The 'toBe' matcher compares with ===", function() {
 * [CasperJS] - 封装库 "CasperJS is a navigation scripting & testing utility which uses headless browsers."
 
 
-
-[PhantomJS]: http://phantomjs.org/
-[SlimerJS]: http://www.slimerjs.org/
-[CasperJS]: http://casperjs.org/
 
 
 ### 其它
@@ -195,3 +172,31 @@ describe("The 'toBe' matcher compares with ===", function() {
 [IBM DeveloperWorks的文章]: http://www.ibm.com/developerworks/cn/java/j-lo-TestDoubles/
 
 
+
+
+[PhantomJS]: http://phantomjs.org/
+[SlimerJS]: http://www.slimerjs.org/
+[CasperJS]: http://casperjs.org/
+
+[Chai]: http://chaijs.com/
+[should.js]: https://shouldjs.github.io/
+[expect.js]: https://github.com/Automattic/expect.js
+
+
+[Karma]: https://karma-runner.github.io
+[Selemium]: www.seleniumhq.org
+[Mocha]: https://mochajs.org/
+[JsTestDriver]: https://code.google.com/archive/p/js-test-driver/
+[Teaspoon]: https://github.com/modeset/teaspoon
+[Test'em]: https://github.com/testem/testem
+
+
+[Sinnon.Js]: http://sinonjs.org/
+
+[Jasmine]: https://jasmine.github.io
+[Tape]: https://github.com/substack/tape
+[Cucumber]: https://cucumber.io/
+[TAP]: http://www.node-tap.org/
+[AVA]: https://github.com/sindresorhus/ava
+[protractor]: http://www.protractortest.org/
+[jstest]: http://jstest.jcoglan.com
