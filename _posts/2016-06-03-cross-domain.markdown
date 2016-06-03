@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "几种跨域问题方案(上传文件/IE89 CORS兼容)"
-date:   2016-06-03 18:14
+date:   2016-06-03 18:14 +0800
 categories: cross-domain 跨域 jsonp cors proxy
 ---
 
